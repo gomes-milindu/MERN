@@ -24,6 +24,8 @@ app.post("/",
 app.listen(5000, success) // run wenna ptn gnnwa
 // 5000 kiynne port number eka
 
+console.log("Checking JS File")
+
 // http request
     // 1. Get
     // 2. Post
