@@ -15,11 +15,11 @@ app.get("/",
 )
 
 // app ekata post request ekak awoth wena wade
-// app.post("/",
-//     ()=>{
-//         console.log("Post Request received");
-//     }
-// )
+app.post("/",
+    ()=>{
+        console.log("Post Request received");
+    }
+)
 
 // app.listen(5000, success) // run wenna ptn gnnwa
 // 5000 kiynne port number eka
