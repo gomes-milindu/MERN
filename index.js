@@ -21,7 +21,7 @@ app.post("/",
     }
 )
 
-// app.listen(5000, success) // run wenna ptn gnnwa
+app.listen(5000, success) // run wenna ptn gnnwa
 // 5000 kiynne port number eka
 
 // http request
