@@ -8,11 +8,11 @@ function success(){
 }
 
 // app ekata get request ekak awoth wena wade
-// app.get("/",
-//     () => {
-//         console.log("Get request received");
-//     }
-// )
+app.get("/",
+    () => {
+        console.log("Get request received");
+    }
+)
 
 // app ekata post request ekak awoth wena wade
 // app.post("/",
