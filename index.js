@@ -1,11 +1,11 @@
 import express from "express";
 
-// const app = express()
+const app = express()
 
-// function success(){
-//     console.log("Project Started");
+function success(){
+    console.log("Project Started");
     
-// }
+}
 
 // app ekata get request ekak awoth wena wade
 // app.get("/",
