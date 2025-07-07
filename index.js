@@ -11,7 +11,17 @@ function success(){
 app.use(express.json); // middle man
 
 const connectionString = "mongodb+srv://admin:123@cluster0.arkyzdz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-mongoose.connect(connectionString);
+mongoose.connect(connectionString).then(
+    ()=>{
+        console.log("Database Succesfully Connected");
+        // then eka athule hari giyoth wenna ona wade
+    }
+).catch(
+    ()=>{
+        console.log("Database Connected Failed");
+        // waradunoth wena wade
+    }
+)
 
 // app ekata get request ekak awoth wena wade
 app.get("/",
