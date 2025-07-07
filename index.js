@@ -1,4 +1,5 @@
 import express from "express";
+import mongoose from "mongoose";
 
 const app = express()
 
@@ -7,10 +8,26 @@ function success(){
     
 }
 
+app.use(express.json); // middle man
+
+const connectionString = "mongodb+srv://admin:123@cluster0.arkyzdz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+mongoose.connect(connectionString);
+
 // app ekata get request ekak awoth wena wade
 app.get("/",
-    () => {
-        console.log("Get request received");
+     (req,res) => {
+        //console.log("Get request received");
+        console.log(req.body)
+        let gender = "Mr. "
+        if(req.body.gender == "Female"){
+            gender = "Mrs. "
+        }
+
+        res.json(
+        {
+            message: "Message from res.json " + gender
+        }
+        )
     }
 )
 
