@@ -27,7 +27,7 @@ mongoose.connect(connectionString).then(
 app.get("/",
      (req,res) => {
         //console.log("Get request received");
-        console.log(req.body)
+        //console.log(req.body)
         let gender = "Mr. "
         if(req.body.gender == "Female"){
             gender = "Mrs. "
@@ -59,5 +59,3 @@ console.log("Checking JS File")
     // 3. Delete
     // 4. Put 
 
-console.log("MErn Start day 03");
-console.log("Mern Day 04 start");
