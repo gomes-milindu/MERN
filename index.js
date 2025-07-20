@@ -47,6 +47,11 @@ const studentSchema = new mongoose.Schema(
         city: String
     }
 )
+
+const Student = mongoose.model("Student",studentSchema) // student collection ekai backend ekai athara wada krnne meya haraha
+// collection eke nama saha data save wena wyuhaya
+
+
 // app ekata post request ekak awoth wena wade
 app.post("/",
     ()=>{
