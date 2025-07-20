@@ -54,9 +54,16 @@ const Student = mongoose.model("Student",studentSchema) // student collection ek
 
 // app ekata post request ekak awoth wena wade
 app.post("/",
-    ()=>{
+    (req,res)=>{
         
          console.log(req.body);
+         const student = new Student({
+        name : req.body.name,
+        age : req.body.age,
+        city: req.body.city
+    })
+
+        student.save()
     }
 )
 
