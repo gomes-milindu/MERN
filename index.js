@@ -40,7 +40,13 @@ app.get("/",
         )
     }
 )
-
+const studentSchema = new mongoose.Schema(
+    {
+        name:String,
+        age:Number,
+        city: String
+    }
+)
 // app ekata post request ekak awoth wena wade
 app.post("/",
     ()=>{
