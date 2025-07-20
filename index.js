@@ -55,7 +55,8 @@ const Student = mongoose.model("Student",studentSchema) // student collection ek
 // app ekata post request ekak awoth wena wade
 app.post("/",
     ()=>{
-        console.log("Post Request received");
+        
+         console.log(req.body);
     }
 )
 
