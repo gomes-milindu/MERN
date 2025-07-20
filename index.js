@@ -11,6 +11,7 @@ function success(){
 app.use(express.json); // middle man
 
 const connectionString = "mongodb+srv://admin:123@cluster0.arkyzdz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+
 mongoose.connect(connectionString).then(
     ()=>{
         console.log("Database Succesfully Connected");
@@ -26,8 +27,7 @@ mongoose.connect(connectionString).then(
 // app ekata get request ekak awoth wena wade
 app.get("/",
      (req,res) => {
-        //console.log("Get request received");
-        //console.log(req.body)
+        
         let gender = "Mr. "
         if(req.body.gender == "Female"){
             gender = "Mrs. "
